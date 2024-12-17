@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Gruppo&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Gruppo&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.logo{
+    width: 100px;
+    margin-bottom: -30px;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #FF94CA;
+    font-family: "Rubik", sans-serif;
+    font-weight: bold;
+}
+
+header {
+
+    background: #FF94CA;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 40px;
+}
+header h2 {
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    font-size: 30px;
+}
+
+nav {
+    background: #193B8B;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #fdd2ff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+
+.hero {
+    background: url('img/fondo-body.webp') no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+.boton{
+    padding: 20px 35px;
+    border-radius: 30px;
+    background-color: #0f40b2;
+    margin-top: 20px;
+    border-color: #ccc;  
+    
+}
+#botonn a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+}
+#botonn{
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px rgba(0, 0, 0, 0.4);
+  
+}
+#botonn :hover{
+   background-color: #193B8B;
+    transition-duration: 2s;
+}
+#galeria {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+#galeria img {
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    border: 2px black;
+}
+
+
+.sobre {
+    padding: 2rem;
+    text-align: center;
+    background: #193B8B;
+    color: white;
+}
+
+.sobre h2 {
+    color: #fdd2ff;
+}
+
+.contact {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    background: #193B8B;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.Redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap; 
+    max-width: 100%;
+    padding: 1rem;
+}
+
+.Redes ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.Redes li {
+    display: inline-block;
+}
+
+.Redes a {
+ 
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #193B8B;
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-weight: normal;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        text-align: center; 
+        transition: background-color 0.3s;
+    
+}
+
+.Redes a:hover {
+    background-color: #145a9c;
+}
+
+.Redes i {
+    margin-right: 8px;
+}
+
+
+@media (max-width: 600px) {
+    .Redes {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom:20px ;
+        align-items: center;
+
+
+    }
+
+    .Redes ul {
+        flex-direction: column; 
+        gap: 10px;
+        margin-right: 20px;
+
+    }
+
+    .Redes a {
+        font-size: 18px;
+        padding: 10px 10px ; 
+        width: 100%;
+    }
+}
+
+
+.sabores {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #193B8B;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sabores h2 {
+    text-align: center;
+    color: white;
+}
+
+.sabores button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: white;
+    background-color: #FF94CA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sabores button:hover {
+    background-color: #e600a9;
+}
+
+.sabores ul {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.sabores ul li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+.sabores ul li:last-child {
+    border-bottom: none;
+}
+.mapa {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #0f40b2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapa h2 {
+    text-align: center;
+    color: #FF94CA;
+    margin-bottom: 1rem;
+}

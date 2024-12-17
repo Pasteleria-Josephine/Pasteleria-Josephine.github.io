@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastelería Jospephine </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+</head>
+<body>
+    <header>
+      <img src="img/logo.png" alt="Logo de la pastelería" class="logo">
+      <h1>Pastelería Jospephine</h1>
+      <h2>Pastel Casero</h2>
+        
+    </header>
+
+    <nav>
+        <a href="#galeria">Galería</a>
+        <a href="#nosotros">Sobre Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#redes">Redes</a>
+        <a href="img/Precio-Pasteles.png" download="Lista de precios">Precios</a>
+    </nav>
+  <main>
+    <section class="hero">
+        <h2>Delicias hechas con amor
+        </h2>
+    </section>
+    <section id="botonn">
+     <a class="boton" href="img/Precio-Pasteles.png" download="Lista de precios">Descargar lista de precios</a>
+    </section>
+    <section id="galeria" class="splide">
+      <div class="splide__track">
+          <ul class="splide__list">
+              <li class="splide__slide"><img src="img/img-pastel1.png" alt="Pastel 1"></li>
+              <li class="splide__slide"><img src="img/img-pastel2.png" alt="Pastel 2"></li>
+              <li class="splide__slide"><img src="img/img-pastel3.png" alt="Pastel 3"></li>
+              <li class="splide__slide"><img src="img/img-pastel4.png" alt="Pastel 4"></li>
+          </ul>
+      </div>
+  </section>
+  <section class="sabores">
+    <h2>Sabores Disponibles</h2>
+    <button onclick="toggleList('humedos')">Pasteles Húmedos</button>
+    <ul id="humedos">
+        <li>Zanahoria</li>
+        <li>Nuez/Piña</li>
+        <li>Tres Leches</li>
+        <li>Mazapán</li>
+        <li>Rompope</li>
+        <li>Guayaba</li>
+        <li>Alemán</li>
+        <li>Chocolate/Tres Leches</li>
+    </ul>
+
+    <button onclick="toggleList('secos')">Pasteles Secos</button>
+    <ul id="secos">
+        <li>Vainilla</li>
+        <li>Chocolate</li>
+        <li>Marmoleado</li>
+        <li>Naranja</li>
+        <li>Nuez</li>
+    </ul>
+    <ul>
+      <li>Cup cakes</li>
+    </ul>
+</section>
+    <section id="nosotros" class="sobre">
+        <h2>Sobre Nosotros</h2>
+        <p>En Pastelería Jospephine, llevamos más de 8 años creando los más deliciosos pasteles y postres para tus momentos especiales. ¡Hacemos tus sueños dulces realidad!</p>
+    </section>
+     
+    <section id="contacto" class="contact">
+        <h2>Contáctanos</h2>
+        <form action="https://formsubmit.co/isaachappy94@gmail.com" method="POST"  >
+          <input type="text" name="Nombre" placeholder="Tu Nombre" required>
+          <input type="tel" name="Telefono" placeholder="Tu Teléfono" required>
+          <textarea name="Comentario" placeholder="Tu Mensaje" rows="5" required></textarea>
+          <button type="submit">Enviar</button>
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
+          <input type="hidden" name="_captcha" value="false">
+
+      </form>
+    </section>
+<section id="redes" class="Redes">
+  <ul>
+    <li><a href="https://www.facebook.com/Sandritadelg"><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+    <li><a href="https://wa.me/524491631381?text=¡Hola!%20Me%20encanta%20la%20oferta%20de%20pasteles%20que%20tienen.%20Vengo%20de%20la%20página%20y%20me%20gustaría%20saber%20más%20sobre%20los%20sabores%20y%20precios." ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></li>
+  </ul>
+</section>
+<section class="mapa">
+  <h2>Encuéntranos aquí</h2>
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.2931968712974!2d-102.28022902526124!3d21.923277156456596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef45fc9d3af5%3A0x747393ac3114de5c!2sPastel%20casero%20josefhine%20by%20Sandra%20Delgado!5e0!3m2!1ses-419!2smx!4v1734361379194!5m2!1ses-419!2smx"
+      width="100%" 
+      height="300" 
+      style="border:0; border-radius: 10px;" 
+      allowfullscreen="" 
+      loading="lazy">
+  </iframe>
+</section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="pasteleria.js"></script>
+  </main>
+    <footer class="footer">
+        <p>&copy; 2024 Pastelería Jospephine. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
